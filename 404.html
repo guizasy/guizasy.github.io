@@ -1,31 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR"
+  data-pt-title="Página não encontrada — Guilherme Zasyeki"
+  data-en-title="Page not found — Guilherme Zasyeki">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Page not found · Guilherme Zasyeki</title>
+  <title>Página não encontrada — Guilherme Zasyeki</title>
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0F1B2D">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
-  <!-- BRAND FONT: keep in sync with index.html. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Archivo:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="/assets/css/brand.css">
   <link rel="stylesheet" href="/assets/css/site.css">
-  <script>
-    try {
-      var t = localStorage.getItem("theme");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
-  </script>
 </head>
 <body>
-  <main class="hero">
-    <div class="container">
-      <p class="eyebrow">404</p>
-      <h1>This page doesn't exist.</h1>
-      <p class="lede">The link may be old or mistyped.</p>
-      <div class="actions">
-        <a class="button primary" href="/">Back to the home page</a>
+  <nav class="nav" aria-label="Principal" data-pt-label="Principal" data-en-label="Primary">
+    <div class="wrap">
+      <a class="wordmark" href="/">Guilherme Zasyeki</a>
+      <div class="nav-dir">
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-set-lang="pt" aria-pressed="true">PT</button>/<button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
       </div>
     </div>
+  </nav>
+  <main class="nf">
+    <div class="wrap">
+      <p class="rotulo" data-pt="Erro 404" data-en="Error 404">Erro 404</p>
+      <h1 data-pt="Esta página não existe." data-en="This page doesn't exist.">Esta página não existe.</h1>
+      <p class="apoio" data-pt="O link pode estar desatualizado ou com erro de digitação." data-en="The link may be outdated or mistyped.">O link pode estar desatualizado ou com erro de digitação.</p>
+      <a class="btn" href="/" data-pt="Voltar ao início" data-en="Back to the home page">Voltar ao início</a>
+    </div>
   </main>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

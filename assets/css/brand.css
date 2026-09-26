@@ -1,58 +1,53 @@
 /*
- * BRAND TOKENS — the only file you need to edit to apply your branding.
+ * Arg[3] brand tokens (derived brand: personal site).
+ * Colors, fonts and base rules from the Arg[3] manual. Do not add colors
+ * outside this list. Sinal is an accent only: hover states and at most
+ * one static highlight per viewport.
  *
- * Every color, font and radius on the site reads from these variables.
- * Replace the placeholder values below with your brand values, and swap
- * assets/img/logo.svg and assets/img/favicon.svg for your own marks.
- *
- * If you use a web font, add its <link> in the <head> of index.html and
- * 404.html (look for "BRAND FONT"), then put its name first in --font-*.
+ * Fonts are loaded with a <link> in the <head> of each page.
  */
 
 :root {
-  /* Typography */
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-display: var(--font-sans);
-  --font-mono: ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
+  --tinta: #0F1B2D;   /* text, dark backgrounds */
+  --sinal: #E8562A;   /* single accent */
+  --nevoa: #EFEDE8;   /* alternate background */
+  --papel: #FFFFFF;   /* default background */
+  --rotulo: #8A867E;  /* labels, captions, metadata */
+  --texto-2: #4A5560; /* secondary text */
+  --corpo: #2B3640;   /* body text */
+  --linha: #DCD8D0;   /* rules and dividers */
+  --rotulo-neg: #8FA0B4; /* labels on Tinta */
 
-  /* Brand colors (placeholders) */
-  --brand-primary: #2f5bea;        /* main accent: links, buttons, highlights */
-  --brand-primary-contrast: #ffffff; /* text on top of --brand-primary */
-  --brand-secondary: #0fb5a6;      /* optional second accent: tags, details */
-
-  /* Light theme surfaces */
-  --bg: #fafaf9;
-  --surface: #ffffff;
-  --text: #16181d;
-  --text-muted: #5b606b;
-  --border: #e4e4e7;
-
-  /* Shape */
-  --radius: 12px;
-  --radius-sm: 8px;
+  --mono: "JetBrains Mono", Consolas, monospace;
+  --sans: "Archivo", Arial, sans-serif;
 }
 
-/* Dark theme: follows the OS unless the visitor picked a theme with the toggle */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --brand-primary: #7b9bff;
-    --brand-primary-contrast: #0b0d12;
-    --brand-secondary: #3fd9c9;
-    --bg: #0e1015;
-    --surface: #161920;
-    --text: #eceef3;
-    --text-muted: #9aa0ad;
-    --border: #262a33;
-  }
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--corpo);
+  font-family: var(--sans);
 }
 
-:root[data-theme="dark"] {
-  --brand-primary: #7b9bff;
-  --brand-primary-contrast: #0b0d12;
-  --brand-secondary: #3fd9c9;
-  --bg: #0e1015;
-  --surface: #161920;
-  --text: #eceef3;
-  --text-muted: #9aa0ad;
-  --border: #262a33;
+a { color: var(--tinta); text-underline-offset: 3px; transition: color .15s; }
+a:hover { color: var(--sinal); }
+:focus-visible { outline: 2px solid var(--sinal); outline-offset: 3px; }
+
+h1, h2, h3 { font-family: var(--mono); font-weight: 500; color: var(--tinta); margin: 0; }
+p, li { text-wrap: pretty; }
+
+.rotulo {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rotulo);
+  margin: 0;
 }
+
+/* Arg[3] logo: only used for the footer link to the company. */
+.logo { font-family: var(--mono); font-weight: 500; letter-spacing: -0.03em; color: var(--tinta); white-space: nowrap; }
+.logo b { font-weight: 500; color: var(--sinal); }

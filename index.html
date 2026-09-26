@@ -1,184 +1,269 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR"
+  data-pt-title="Guilherme Zasyeki — Arquiteto de soluções MuleSoft"
+  data-en-title="Guilherme Zasyeki — MuleSoft Solution Architect">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guilherme Zasyeki</title>
-  <!-- TODO: rewrite this description in your own words. -->
-  <meta name="description" content="Guilherme Zasyeki — software engineer. Projects, writing and ways to get in touch.">
-  <meta name="theme-color" content="#2f5bea">
+  <title>Guilherme Zasyeki — Arquiteto de soluções MuleSoft</title>
+  <meta name="description" content="Arquiteto de soluções MuleSoft na API People, com mais de 15 anos de engenharia de software: integrações entre Salesforce, SAP, Coupa e gateways de pagamento.">
+  <meta name="theme-color" content="#0F1B2D">
   <link rel="canonical" href="https://guizasy.github.io/">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Guilherme Zasyeki">
-  <meta property="og:description" content="Software engineer. Projects, writing and ways to get in touch.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Guilherme Zasyeki — Arquiteto de soluções MuleSoft">
+  <meta property="og:description" content="Arquitetura de integração, do firmware à API. Mais de 15 anos de engenharia de software, 9 com MuleSoft.">
   <meta property="og:url" content="https://guizasy.github.io/">
-  <meta property="og:image" content="https://guizasy.github.io/assets/img/logo.svg">
+  <meta property="og:image" content="https://guizasy.github.io/assets/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
-  <!-- BRAND FONT: add your web font <link> here, then set --font-sans in assets/css/brand.css. -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Archivo:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="assets/css/brand.css">
   <link rel="stylesheet" href="assets/css/site.css">
-
-  <script>
-    // Apply a saved theme before first paint to avoid a flash.
-    try {
-      var t = localStorage.getItem("theme");
-      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-    } catch (e) {}
-  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-pt="Pular para o conteúdo" data-en="Skip to content">Pular para o conteúdo</a>
 
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="#top">
-        <img src="assets/img/logo.svg" alt="" width="32" height="32">
-        <span>Guilherme Zasyeki</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a class="nav-keep" href="#contact">Contact</a>
-        <button class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-        </button>
-      </nav>
+  <nav class="nav" aria-label="Principal" data-pt-label="Principal" data-en-label="Primary">
+    <div class="wrap">
+      <a class="wordmark" href="#main">Guilherme Zasyeki</a>
+      <div class="nav-dir">
+        <ul>
+          <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
+          <li><a href="#atuacao" data-pt="Atuação" data-en="Practice">Atuação</a></li>
+          <li><a href="#projetos" data-pt="Projetos" data-en="Work">Projetos</a></li>
+          <li><a href="#trajetoria" data-pt="Trajetória" data-en="Career">Trajetória</a></li>
+          <li><a href="#stack">Stack</a></li>
+        </ul>
+        <div class="lang" role="group" aria-label="Idioma / Language">
+          <button type="button" data-set-lang="pt" aria-pressed="true">PT</button>/<button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="btn small" href="#contato" data-pt="Contato" data-en="Contact">Contato</a>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="container">
-        <!-- TODO: your current title / focus. -->
-        <p class="eyebrow">Software engineer</p>
-        <h1>Hi, I'm Guilherme.</h1>
-        <!-- TODO: one or two sentences on what you do and who you do it for. -->
-        <p class="lede">
-          I build software and the systems that connect it. This is where I keep my
-          projects, notes and the best ways to reach me.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="#contact">Get in touch</a>
-          <a class="button" href="https://github.com/guizasy" rel="me">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
-    </section>
 
-    <section class="section" id="about">
-      <div class="container about">
+    <section class="hero">
+      <div class="wrap">
         <div>
-          <h2>About</h2>
-          <!-- TODO: replace with your own bio. -->
-          <p>
-            I'm a software engineer who likes turning messy problems into dependable
-            systems. Over the years I've worked across mobile apps, data pipelines,
-            machine learning experiments and platform infrastructure.
-          </p>
-          <p>
-            Add a few lines here about what you're working on now, what you care about,
-            and what kind of work you'd like to hear about.
-          </p>
+          <p class="rotulo" data-pt="Arquiteto de soluções MuleSoft · Curitiba" data-en="MuleSoft Solution Architect · Curitiba, Brazil">Arquiteto de soluções MuleSoft · Curitiba</p>
+          <h1 data-pt="Arquitetura de integração, do firmware à API." data-en="Integration architecture, from firmware to API.">Arquitetura de integração, do firmware à API.</h1>
+          <hr class="filete">
+          <p class="apoio" data-pt="Arquiteto de soluções na API People. Desenho e construo integrações entre Salesforce, SAP, Coupa, ERPs e gateways de pagamento para clientes nos Estados Unidos." data-en="Solution Architect at API People. I design and build integrations between Salesforce, SAP, Coupa, ERPs and payment gateways for clients in the United States.">Arquiteto de soluções na API People. Desenho e construo integrações entre Salesforce, SAP, Coupa, ERPs e gateways de pagamento para clientes nos Estados Unidos.</p>
+          <div class="ctas">
+            <a class="btn" href="mailto:guizasy@gmail.com" data-pt="Enviar e-mail →" data-en="Send an email →">Enviar e-mail →</a>
+            <a class="btn sec" href="#projetos" data-pt="Ver projetos" data-en="See work">Ver projetos</a>
+          </div>
         </div>
-        <ul class="facts">
-          <li>
-            <span class="label">Based in</span>
-            <!-- TODO: your city / country, or remove this item. -->
-            Your city
-          </li>
-          <li>
-            <span class="label">Currently</span>
-            <!-- TODO: role and company, or remove this item. -->
-            Your role at your company
-          </li>
-          <li>
-            <span class="label">Tools I reach for</span>
-            <!-- TODO: edit to match your actual stack. -->
-            <ul class="chips">
-              <li>Java</li>
-              <li>Python</li>
-              <li>Android</li>
-              <li>OpenShift</li>
-              <li>TensorFlow</li>
-            </ul>
-          </li>
+        <ul class="dados">
+          <li><span class="num">15+</span><span class="rotulo" data-pt="anos de engenharia de software" data-en="years in software engineering">anos de engenharia de software</span></li>
+          <li><span class="num">9+</span><span class="rotulo" data-pt="anos com MuleSoft" data-en="years with MuleSoft">anos com MuleSoft</span></li>
+          <li><span class="num">5</span><span class="rotulo" data-pt="certificações MuleSoft, incl. MCIA e MCPA" data-en="MuleSoft certifications, incl. MCIA and MCPA">certificações MuleSoft, incl. MCIA e MCPA</span></li>
         </ul>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2>Selected projects</h2>
-          <p>A few things from GitHub.</p>
+    <section class="sobre" id="sobre">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="rotulo" data-pt="01 · Sobre" data-en="01 · About">01 · Sobre</p>
+          <h2 data-pt="De telecom a APIs" data-en="From telecom to APIs">De telecom a APIs</h2>
         </div>
-        <div class="cards">
-          <a class="card" href="https://github.com/mule-meetups-ctba/demo-mcp-hello-world">
-            <h3>demo-mcp-hello-world</h3>
-            <p>A hello-world Model Context Protocol demo from the Mule Meetups Curitiba group.</p>
-            <span class="tag">MCP · MuleSoft</span>
-          </a>
-          <a class="card" href="https://github.com/guizasy/openshift-nifi">
-            <h3>openshift-nifi</h3>
-            <p>Running Apache NiFi on OpenShift.</p>
-            <span class="tag">OpenShift · NiFi</span>
-          </a>
-          <a class="card" href="https://github.com/guizasy/openshift-zookeeper">
-            <h3>openshift-zookeeper</h3>
-            <p>Running Apache ZooKeeper on OpenShift.</p>
-            <span class="tag">OpenShift · ZooKeeper</span>
-          </a>
-          <a class="card" href="https://github.com/guizasy/tf-record-caltech-pedestrian-dataset">
-            <h3>tf-record-caltech-pedestrian-dataset</h3>
-            <p>Converting the Caltech Pedestrian dataset to TensorFlow TFRecords.</p>
-            <span class="tag">TensorFlow · ML</span>
-          </a>
-          <a class="card" href="https://github.com/guizasy/SensorsMeter">
-            <h3>SensorsMeter</h3>
-            <p>An Android app that reads the device's sensors.</p>
-            <span class="tag">Android</span>
-          </a>
-          <a class="card" href="https://github.com/guizasy/sample-auto-complete">
-            <h3>sample-auto-complete</h3>
-            <p>A small autocomplete sample.</p>
-            <span class="tag">Sample</span>
-          </a>
+        <div class="texto">
+          <p data-pt="Sou bacharel em Ciência da Computação pela UFPR e trabalho com software há mais de 15 anos. Comecei em telecomunicações: cinco anos escrevendo C e C++ para equipamentos de rede na Siemens e na Datacom, entre pilhas SIP, ferramentas de QoS, a pilha Ethernet e o módulo AAA de um switch." data-en="I hold a BSc in Computer Science from the Federal University of Paraná and have worked in software for more than 15 years. I started in telecom: five years writing C and C++ for network equipment at Siemens and Datacom, covering SIP stacks, QoS tools, a switch's Ethernet stack and its AAA module.">Sou bacharel em Ciência da Computação pela UFPR e trabalho com software há mais de 15 anos. Comecei em telecomunicações: cinco anos escrevendo C e C++ para equipamentos de rede na Siemens e na Datacom, entre pilhas SIP, ferramentas de QoS, a pilha Ethernet e o módulo AAA de um switch.</p>
+          <p data-pt="Em 2017 entrei na ExxonMobil, onde passei três anos expondo o SAP Plant Maintenance e bancos SQL como APIs Mule e consolidando os dados mestres de equipamentos das refinarias e plantas químicas no TIBCO EBX. Depois trabalhei na Splunk, pela Launchpad, e na Trust Payments, pela BairesDev. Desde novembro de 2021 sou arquiteto de soluções MuleSoft na API People." data-en="In 2017 I joined ExxonMobil, where I spent three years exposing SAP Plant Maintenance and SQL databases as Mule APIs and consolidating equipment master data for refining and chemical sites in TIBCO EBX. I then worked at Splunk through Launchpad and at Trust Payments through BairesDev. Since November 2021 I have been a MuleSoft Solution Architect at API People.">Em 2017 entrei na ExxonMobil, onde passei três anos expondo o SAP Plant Maintenance e bancos SQL como APIs Mule e consolidando os dados mestres de equipamentos das refinarias e plantas químicas no TIBCO EBX. Depois trabalhei na Splunk, pela Launchpad, e na Trust Payments, pela BairesDev. Desde novembro de 2021 sou arquiteto de soluções MuleSoft na API People.</p>
+          <p data-pt="Transformo necessidades de negócio em arquiteturas práticas e acompanho a solução até produção. Lidero o MuleSoft Meetup de Curitiba desde 2023 e sou MuleSoft Mentor desde 2024." data-en="I turn business needs into practical architectures and stay with the solution through production. I have led the MuleSoft Meetup in Curitiba since 2023 and have been a MuleSoft Mentor since 2024.">Transformo necessidades de negócio em arquiteturas práticas e acompanho a solução até produção. Lidero o MuleSoft Meetup de Curitiba desde 2023 e sou MuleSoft Mentor desde 2024.</p>
         </div>
-        <a class="more-link" href="https://github.com/guizasy?tab=repositories">All repositories →</a>
       </div>
     </section>
 
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="contact">
-          <h2>Let's talk</h2>
-          <p>
-            Open to conversations about projects, collaboration and speaking.
-            The best way to reach me is below.
-          </p>
-          <div class="actions">
-            <!-- TODO: add your public email and LinkedIn, e.g.
-            <a class="button primary" href="mailto:you@example.com">Email me</a>
-            <a class="button" href="https://www.linkedin.com/in/your-handle/" rel="me">LinkedIn</a>
-            -->
-            <a class="button primary" href="https://github.com/guizasy" rel="me">Find me on GitHub</a>
+    <section id="atuacao">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="rotulo" data-pt="02 · Atuação" data-en="02 · Practice">02 · Atuação</p>
+          <h2 data-pt="O que faço" data-en="What I do">O que faço</h2>
+        </div>
+        <div class="grade">
+          <div class="item">
+            <span class="n">01</span>
+            <h3 data-pt="Arquitetura de integração" data-en="Integration architecture">Arquitetura de integração</h3>
+            <p data-pt="APIs no modelo API-led com MuleSoft: camadas de sistema, processo e experiência, documentos de design técnico e ativos reutilizáveis entre projetos." data-en="API-led design with MuleSoft: system, process and experience layers, technical design documents and assets reused across projects.">APIs no modelo API-led com MuleSoft: camadas de sistema, processo e experiência, documentos de design técnico e ativos reutilizáveis entre projetos.</p>
+          </div>
+          <div class="item">
+            <span class="n">02</span>
+            <h3 data-pt="Plataforma Anypoint" data-en="Anypoint Platform">Plataforma Anypoint</h3>
+            <p data-pt="Runtime Fabric em AKS, CloudHub 2.0, pipelines de CI/CD no Azure DevOps e scripts Terraform que sobem um ambiente padrão com Azure SAML como provedor de identidade." data-en="Runtime Fabric on AKS, CloudHub 2.0, CI/CD pipelines in Azure DevOps and Terraform scripts that stand up a standard environment with Azure SAML as the identity provider.">Runtime Fabric em AKS, CloudHub 2.0, pipelines de CI/CD no Azure DevOps e scripts Terraform que sobem um ambiente padrão com Azure SAML como provedor de identidade.</p>
+          </div>
+          <div class="item">
+            <span class="n">03</span>
+            <h3 data-pt="Segurança e conformidade" data-en="Security and compliance">Segurança e conformidade</h3>
+            <p data-pt="Tokenização de cartões para conter o escopo PCI, políticas customizadas no API Gateway, OAuth2/OIDC, mTLS e SSO com Okta para certificação SOC 2." data-en="Card tokenization to contain PCI scope, custom API Gateway policies, OAuth2/OIDC, mTLS and Okta SSO for SOC 2 certification.">Tokenização de cartões para conter o escopo PCI, políticas customizadas no API Gateway, OAuth2/OIDC, mTLS e SSO com Okta para certificação SOC 2.</p>
+          </div>
+          <div class="item">
+            <span class="n">04</span>
+            <h3 data-pt="IA com MuleSoft" data-en="AI with MuleSoft">IA com MuleSoft</h3>
+            <p data-pt="Implementações de MCP e A2A com Mule, usando A2A 1.0 e Agent Fabric v2.0, reunidas em um hands-on interno sobre desenvolvimento de IA na plataforma." data-en="MCP and A2A implementations with Mule, using A2A 1.0 and Agent Fabric v2.0, packaged as an internal hands-on on AI development on the platform.">Implementações de MCP e A2A com Mule, usando A2A 1.0 e Agent Fabric v2.0, reunidas em um hands-on interno sobre desenvolvimento de IA na plataforma.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <section id="projetos">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="rotulo" data-pt="03 · Projetos" data-en="03 · Work">03 · Projetos</p>
+          <h2 data-pt="Projetos selecionados" data-en="Selected work">Projetos selecionados</h2>
+        </div>
+        <div>
+          <article class="case">
+            <h3><span data-pt="Companhia de cruzeiros" data-en="Cruise line">Companhia de cruzeiros</span><small class="rotulo" data-pt="Pagamentos · PCI" data-en="Payments · PCI">Pagamentos · PCI</small></h3>
+            <p data-pt="Integrações com gateways de pagamento externos que trocam dados de cartão por tokens, sem ampliar o escopo PCI do cliente. Criptografia, pipelines de CI/CD e políticas customizadas no API Gateway com AWS Secrets Manager." data-en="Integrations with external payment gateways that exchange card data for tokens without widening the client's PCI scope. Encryption, CI/CD pipelines and custom API Gateway policies backed by AWS Secrets Manager.">Integrações com gateways de pagamento externos que trocam dados de cartão por tokens, sem ampliar o escopo PCI do cliente. Criptografia, pipelines de CI/CD e políticas customizadas no API Gateway com AWS Secrets Manager.</p>
+            <div class="res">2023 →<small data-pt="Arquiteto de plataforma e solução" data-en="Platform and solution architect">Arquiteto de plataforma e solução</small></div>
+          </article>
+          <article class="case">
+            <h3><span data-pt="Seguradora nos EUA" data-en="US insurance company">Seguradora nos EUA</span><small class="rotulo" data-pt="Fiscal · Coupa × Vertex" data-en="Tax · Coupa × Vertex">Fiscal · Coupa × Vertex</small></h3>
+            <p data-pt="Integração entre Coupa e Vertex para cálculo de impostos em uma das maiores seguradoras dos EUA. Configuração da plataforma, arquitetura e desenvolvimento; a solução segue em suporte por contrato de serviços gerenciados." data-en="Coupa to Vertex integration for tax calculation at one of the largest insurers in the US. Platform setup, architecture and development; the solution remains under a managed services contract.">Integração entre Coupa e Vertex para cálculo de impostos em uma das maiores seguradoras dos EUA. Configuração da plataforma, arquitetura e desenvolvimento; a solução segue em suporte por contrato de serviços gerenciados.</p>
+            <div class="res">2023 →<small data-pt="Plataforma, arquitetura e desenvolvimento" data-en="Platform, architecture and build">Plataforma, arquitetura e desenvolvimento</small></div>
+          </article>
+          <article class="case">
+            <h3><span data-pt="Empresa de saúde" data-en="Healthcare company">Empresa de saúde</span><small class="rotulo">Salesforce × Athena × AGS Health</small></h3>
+            <p data-pt="Montagem do ambiente MuleSoft: Runtime Fabric em AKS para produção, CloudHub 2.0 para os demais ambientes e pipelines no Azure DevOps. Treinamento do time e evolução da solução inicial." data-en="MuleSoft environment setup: Runtime Fabric on AKS for production, CloudHub 2.0 for lower environments and Azure DevOps pipelines. Team training and evolution of the initial solution.">Montagem do ambiente MuleSoft: Runtime Fabric em AKS para produção, CloudHub 2.0 para os demais ambientes e pipelines no Azure DevOps. Treinamento do time e evolução da solução inicial.</p>
+            <div class="res">2023–25<small data-pt="Arquiteto de plataforma" data-en="Platform architect">Arquiteto de plataforma</small></div>
+          </article>
+          <article class="case">
+            <h3>JHA<small class="rotulo" data-pt="Autenticação · Workato" data-en="Authentication · Workato">Autenticação · Workato</small></h3>
+            <p data-pt="Camada de abstração para a autenticação da JHA, dentro dos requisitos SOC 2: uma ponte no Azure que converte Basic Auth em token OAuth2 para o conector Workato." data-en="An abstraction layer for JHA authentication under SOC 2 requirements: an Azure bridge that converts Basic Auth into an OAuth2 token for the Workato connector.">Camada de abstração para a autenticação da JHA, dentro dos requisitos SOC 2: uma ponte no Azure que converte Basic Auth em token OAuth2 para o conector Workato.</p>
+            <div class="res">2026 →<small data-pt="Arquitetura e desenvolvimento" data-en="Architecture and build">Arquitetura e desenvolvimento</small></div>
+          </article>
+          <article class="case">
+            <h3><span data-pt="Compras corporativas" data-en="Corporate procurement">Compras corporativas</span><small class="rotulo">Coupa × SAP / Oracle</small></h3>
+            <p data-pt="Integração entre Coupa e ERPs SAP e Oracle, com usuários do ServiceNow e fornecedores vindos de um MDM Informatica. Definição de ativos reutilizáveis, boas práticas e documentos de design técnico; fase 1 cobrindo EUA e Canadá." data-en="Coupa integration with SAP and Oracle ERPs, with users from ServiceNow and suppliers from an Informatica MDM. Reusable assets, best practices and technical design documents; phase 1 covered the US and Canada.">Integração entre Coupa e ERPs SAP e Oracle, com usuários do ServiceNow e fornecedores vindos de um MDM Informatica. Definição de ativos reutilizáveis, boas práticas e documentos de design técnico; fase 1 cobrindo EUA e Canadá.</p>
+            <div class="res">2021–22<small data-pt="Arquiteto de soluções" data-en="Solution architect">Arquiteto de soluções</small></div>
+          </article>
+          <article class="case">
+            <h3>Splunk<small class="rotulo" data-pt="Via Launchpad" data-en="Through Launchpad">Via Launchpad</small></h3>
+            <p data-pt="Abstração da API do SendGrid para templates, envio e atividades de e-mail; ETL reutilizável entre Snowflake e Anaplan para dados mestres e financeiros do SAP; serializador de logs para o Splunk HEC; migração da biblioteca de erros do Mule 3 para o Mule 4." data-en="A SendGrid API abstraction for mail templates, sending and activity; a reusable Snowflake to Anaplan ETL for master data and SAP financial data; a log serializer for Splunk HEC; migration of the shared error library from Mule 3 to Mule 4.">Abstração da API do SendGrid para templates, envio e atividades de e-mail; ETL reutilizável entre Snowflake e Anaplan para dados mestres e financeiros do SAP; serializador de logs para o Splunk HEC; migração da biblioteca de erros do Mule 3 para o Mule 4.</p>
+            <div class="res">2020–21<small data-pt="Desenvolvedor MuleSoft sênior" data-en="Senior MuleSoft developer">Desenvolvedor MuleSoft sênior</small></div>
+          </article>
+          <article class="case">
+            <h3>ExxonMobil<small class="rotulo" data-pt="Manufatura digital · MDM" data-en="Digital manufacturing · MDM">Manufatura digital · MDM</small></h3>
+            <p data-pt="APIs REST sobre SAP (OData e RFC), Oracle e SQL Server, publicadas no OpenShift e no CloudHub. Sincronização de equipamentos entre SAP e eVision e consolidação dos dados mestres de todas as refinarias e plantas químicas no TIBCO EBX." data-en="REST APIs over SAP (OData and RFC), Oracle and SQL Server, deployed on OpenShift and CloudHub. Equipment sync between SAP and eVision, and consolidation of master data for every refining and chemical site in TIBCO EBX.">APIs REST sobre SAP (OData e RFC), Oracle e SQL Server, publicadas no OpenShift e no CloudHub. Sincronização de equipamentos entre SAP e eVision e consolidação dos dados mestres de todas as refinarias e plantas químicas no TIBCO EBX.</p>
+            <div class="res">2017–20<small data-pt="Analista de sistemas" data-en="Systems analyst">Analista de sistemas</small></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="trajetoria">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="rotulo" data-pt="04 · Trajetória" data-en="04 · Career">04 · Trajetória</p>
+          <h2 data-pt="Experiência" data-en="Experience">Experiência</h2>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" data-pt="Período" data-en="Period">Período</th>
+              <th scope="col" data-pt="Empresa" data-en="Company">Empresa</th>
+              <th scope="col" data-pt="Papel" data-en="Role">Papel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="per" data-pt="2021 – hoje" data-en="2021 – now">2021 – hoje</td><td class="emp">API People</td><td data-pt="Arquiteto de soluções MuleSoft" data-en="MuleSoft Solution Architect">Arquiteto de soluções MuleSoft</td></tr>
+            <tr><td class="per">2021</td><td class="emp">BairesDev</td><td data-pt="Desenvolvedor MuleSoft na Trust Payments: integrações Salesforce e quebra de um monolito em APIs" data-en="MuleSoft developer at Trust Payments: Salesforce integrations and breaking a monolith into APIs">Desenvolvedor MuleSoft na Trust Payments: integrações Salesforce e quebra de um monolito em APIs</td></tr>
+            <tr><td class="per">2020 – 2021</td><td class="emp">Launchpad</td><td data-pt="Desenvolvedor MuleSoft sênior na Splunk" data-en="Senior MuleSoft developer at Splunk">Desenvolvedor MuleSoft sênior na Splunk</td></tr>
+            <tr><td class="per">2017 – 2020</td><td class="emp">ExxonMobil</td><td data-pt="Analista de sistemas: APIs MuleSoft e MDM com TIBCO EBX" data-en="Systems analyst: MuleSoft APIs and MDM with TIBCO EBX">Analista de sistemas: APIs MuleSoft e MDM com TIBCO EBX</td></tr>
+            <tr><td class="per">2017</td><td class="emp">SWA-Tech</td><td data-pt="Analista de sistemas: app de mobilidade em Kotlin" data-en="Systems analyst: ride-hailing app in Kotlin">Analista de sistemas: app de mobilidade em Kotlin</td></tr>
+            <tr><td class="per">2014 – 2016</td><td class="emp">Datacom</td><td data-pt="Analista de desenvolvimento: plataforma de switches DmOS em C++" data-en="Development analyst: DmOS switch platform in C++">Analista de desenvolvimento: plataforma de switches DmOS em C++</td></tr>
+            <tr><td class="per">2011 – 2014</td><td class="emp">Siemens (CITS)</td><td data-pt="Estagiário e analista de desenvolvimento: OpenScape Branch, SIP e QoS em C/C++" data-en="Intern, then development analyst: OpenScape Branch, SIP and QoS in C/C++">Estagiário e analista de desenvolvimento: OpenScape Branch, SIP e QoS em C/C++</td></tr>
+            <tr><td class="per">2010 – 2011</td><td class="emp">C3SL · UFPR</td><td data-pt="Estagiário: Linux Educacional para escolas públicas (MEC)" data-en="Intern: Educational Linux for Brazilian public schools">Estagiário: Linux Educacional para escolas públicas (MEC)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="formacao">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="rotulo" data-pt="05 · Formação" data-en="05 · Education">05 · Formação</p>
+          <h2 data-pt="Formação, certificações e comunidade" data-en="Education, certifications and community">Formação, certificações e comunidade</h2>
+        </div>
+        <div class="listas">
+          <div>
+            <p class="rotulo" data-pt="Formação" data-en="Education">Formação</p>
+            <ul class="anos">
+              <li><span class="ano">2013</span><span><b data-pt="Ciência da Computação" data-en="BSc Computer Science">Ciência da Computação</b><span data-pt="Universidade Federal do Paraná" data-en="Federal University of Paraná">Universidade Federal do Paraná</span></span></li>
+              <li><span class="ano">2013</span><span><b data-pt="Tecnologia em Mecatrônica Industrial" data-en="Industrial Mechatronics Technology">Tecnologia em Mecatrônica Industrial</b><span data-pt="Universidade Tecnológica Federal do Paraná" data-en="Federal University of Technology – Paraná">Universidade Tecnológica Federal do Paraná</span></span></li>
+              <li><span class="ano">2016</span><span><b data-pt="Mestrado em Visão Computacional (incompleto)" data-en="MSc in Computer Vision (incomplete)">Mestrado em Visão Computacional (incompleto)</b><span data-pt="UFPR · detecção de pedestres" data-en="UFPR · pedestrian detection">UFPR · detecção de pedestres</span></span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="rotulo" data-pt="Certificações" data-en="Certifications">Certificações</p>
+            <ul class="anos">
+              <li><span class="ano">2023</span><span><b>MCPA</b>MuleSoft Certified Platform Architect</span></li>
+              <li><span class="ano">2021</span><span><b>MCIA</b>MuleSoft Certified Integration Architect</span></li>
+              <li><span class="ano">2021</span><span><b>MCD Level 1</b>MuleSoft Certified Developer (Mule 4)</span></li>
+              <li><span class="ano">2020</span><span><b>AZ-900</b>Microsoft Azure Fundamentals</span></li>
+              <li><span class="ano">2017</span><span><b>MCD Integration Professional</b>MuleSoft Certified Developer (Mule 3)</span></li>
+              <li><span class="ano">2017</span><span><b>API Design</b>MuleSoft · RAML 1.0</span></li>
+            </ul>
+          </div>
+          <div>
+            <p class="rotulo" data-pt="Comunidade" data-en="Community">Comunidade</p>
+            <ul class="anos">
+              <li><span class="ano">2023</span><span><b data-pt="MuleSoft Meetup Curitiba" data-en="MuleSoft Meetup Curitiba">MuleSoft Meetup Curitiba</b><span data-pt="Líder do grupo" data-en="Group leader">Líder do grupo</span></span></li>
+              <li><span class="ano">2024</span><span><b>MuleSoft Mentor</b><span data-pt="Programa de mentores da MuleSoft" data-en="MuleSoft's mentor program">Programa de mentores da MuleSoft</span></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="rotulo">06 · Stack</p>
+          <h2 data-pt="Ferramentas" data-en="Tools">Ferramentas</h2>
+        </div>
+        <div class="stack">
+          <div><p class="rotulo" data-pt="Integração" data-en="Integration">Integração</p><ul><li>MuleSoft 3 / 4</li><li>Runtime Fabric</li><li>CloudHub 2.0</li><li>Workato</li><li>Apache NiFi</li><li>TIBCO EBX</li></ul></div>
+          <div><p class="rotulo" data-pt="Cloud e DevOps" data-en="Cloud and DevOps">Cloud e DevOps</p><ul><li>Azure / AKS</li><li>Azure DevOps</li><li>Terraform</li><li>OpenShift</li><li>Docker</li><li>Ansible</li></ul></div>
+          <div><p class="rotulo" data-pt="Linguagens" data-en="Languages">Linguagens</p><ul><li>Java</li><li>C / C++</li><li>Python</li><li>JavaScript</li><li>Kotlin</li></ul></div>
+          <div><p class="rotulo" data-pt="Dados" data-en="Data">Dados</p><ul><li>SQL Server</li><li>PostgreSQL</li><li>Oracle</li><li>Snowflake</li><li>MySQL</li><li>DynamoDB</li></ul></div>
+          <div><p class="rotulo" data-pt="Protocolos" data-en="Protocols">Protocolos</p><ul><li>REST / SOAP</li><li>OAuth2 / OIDC</li><li>SAML</li><li>Kerberos</li><li>mTLS</li><li>SIP</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <div class="wrap">
+        <p class="rotulo" data-pt="07 · Contato" data-en="07 · Contact">07 · Contato</p>
+        <h2 data-pt="Tem uma integração para desenhar ou revisar? Vamos conversar." data-en="Have an integration to design or review? Let's talk.">Tem uma integração para desenhar ou revisar? Vamos conversar.</h2>
+        <div class="ctas">
+          <a class="btn neg lower" href="mailto:guizasy@gmail.com">guizasy@gmail.com</a>
+          <a class="btn sec" href="https://github.com/guizasy" rel="me">GitHub →</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <span>© <span id="year">2026</span> Guilherme Zasyeki</span>
-      <a href="https://github.com/guizasy/guizasy.github.io">Source</a>
+  <footer class="site">
+    <div class="wrap">
+      <span>© <span id="year">2026</span> Guilherme Zasyeki Machado</span>
+      <span class="links">
+        <a href="https://github.com/guizasy" rel="me">GitHub</a>
+        <a href="https://github.com/guizasy/guizasy.github.io" data-pt="Código-fonte" data-en="Source">Código-fonte</a>
+        <span><span data-pt="Fundador da" data-en="Founder of">Fundador da</span> <a href="https://arg3.dev"><span class="logo">Arg<b>[</b>3<b>]</b></span></a></span>
+      </span>
     </div>
   </footer>
 
